@@ -30,6 +30,7 @@ public class Utility {
                 e.printStackTrace();
             }
         }
+        return false;
     }
 
     /**解析服务器返回的地市数据**/
@@ -50,6 +51,7 @@ public class Utility {
                 e.printStackTrace();
             }
         }
+        return false;
     }
 
     /**解析服务器返回的县级数据**/
@@ -70,5 +72,6 @@ public class Utility {
                 e.printStackTrace();
             }
         }
+        return false;
     }
 }
