@@ -1,5 +1,7 @@
 package com.coolweather.android.util;
 
+import javax.security.auth.callback.Callback;
+
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 
