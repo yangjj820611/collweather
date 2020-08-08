@@ -90,7 +90,11 @@ public class WeatherActivity extends AppCompatActivity {
         HttpUtil.sendOkHttpRequest(weatherUrl, new Callback() {
             @Override
             public void onResponse(Call call, Response response) throws IOException {
+<<<<<<< HEAD
                 final String responseText = response.body().string();
+=======
+                final String responseText = response.body().toString();
+>>>>>>> 1f6ebbf0a53570dbf0ae39bd984e697fcd05f41a
                 final Weather weather = Utility.handleWeatherResponse(responseText);
                 runOnUiThread(new Runnable() {
                     @Override
