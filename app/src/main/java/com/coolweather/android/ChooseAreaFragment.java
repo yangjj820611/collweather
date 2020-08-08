@@ -26,8 +26,6 @@ import com.coolweather.android.util.Utility;
 import org.litepal.crud.DataSupport;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.PortUnreachableException;
 import java.util.ArrayList;
 import java.util.List;
@@ -75,7 +73,6 @@ public class ChooseAreaFragment extends Fragment {
         titleText = (TextView) view.findViewById(R.id.title_text);
         backButton = (Button) view.findViewById(R.id.back_button);
         listView = (ListView) view.findViewById(R.id.list_view);
-        queryProvinces();
         adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_list_item_1, dataList);
         listView.setAdapter(adapter);
         return view;
